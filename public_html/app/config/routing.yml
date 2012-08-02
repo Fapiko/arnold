@@ -2,6 +2,10 @@ AcmeHelloBundle:
     resource: "@AcmeHelloBundle/Resources/config/routing.yml"
     prefix:   /
 
+hello:
+    pattern: /hello/{name}
+    defaults: { _controller: AcmeHelloBundle:Hello:index }
+
 # Internal routing configuration to handle ESI
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
