@@ -7,7 +7,7 @@ class HelloController {
 
 	public function indexAction($name) {
 
-		return new Response("<html><body>{$name}</body></html>");
+		return $this->render('AcmeHelloBundle:Hello:index.html.twig', array('name => $name'));
 
 	}
 
